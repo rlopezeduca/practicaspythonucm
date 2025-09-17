@@ -658,36 +658,74 @@
 <ol>
 <li>Crear una función que reciba dos números y realice la división devolviendo el resultado.</li>
 <li>Si el divisor es cero deberá devolver “error”.</li>
-<li>Posteriormente pedir dos números por teclado, llamar a la función creada anteriormente y mostrar el resultado por pantalla.</li>
+<li>Posteriormente pedir dos números por teclado y guardarlos en variables.</li>
+<li>Llamar a la función creada anteriormente y mostrar el resultado por pantalla.</li>
 </ol>
 <h3 id="ejercicio-2">Ejercicio 2</h3>
 <ol>
+<li>Crear una función que reciba una letra e indique si es una vocal.<br />
+<strong>Pista</strong>: La función debe devolver True o False.</li>
 <li>Pedir una palabra por teclado.</li>
-<li>Recorrer la misma e indicar qué vocales tiene. Utilizar una función para averiguar si una letra es una vocal.</li>
+<li>Recorrer la misma e indicar, para cada letra, si es vocal.</li>
 <li>Para facilitar el algoritmo trabajar solo con minúsculas</li>
 </ol>
-<p><code>Escribe una palabra: hola</code><br />
+<p>Ejemplo:<br />
+<code>Escribe una palabra: hola</code><br />
 <code>h</code><br />
 <code>o -&gt; es vocal</code><br />
 <code>l</code><br />
 <code>a -&gt; es vocal</code>  </p>
 <h3 id="ejercicio-3">Ejercicio 3</h3>
 <ol>
+<li>Crear una función que reciba dos números e indique si el primero es divisor del segundo<br />
+<strong>Pista</strong>: utiliza el operador % (resto).</li>
 <li>Pedir un número entero por teclado.</li>
-<li>Indicar, a continuación, todos sus divisores.</li>
-<li>Utilizar una función para verificar si un número es divisor de otro.<br />
-<strong>Extra</strong>: mostrar el resultado en una sola línea.</li>
+<li>Utilizando la función anterior mostrar todos sus divisores.<br />
+<strong>Pista</strong>: tendrás que utilizar un bucle.</li>
 </ol>
 <h3 id="ejercicio-4">Ejercicio 4</h3>
 <ol>
-<li>Mediante el uso de funciones realiza un programa que simule una calculadora.</li>
-<li>Inicialmente se mostrará un menú con las operaciones.</li>
-<li>Después, se pedirán dos números y se realizará la operación.</li>
-<li>A continuación se mostrará el resultado.</li>
-<li>Repetir hasta que se introduzca el número de la opción de salida.</li>
+<li>Crear una función que recorra una lista de números y los muestre ordenados.<br />
+<strong>Pista</strong>: para ordenar utilizar el método sort -&gt; lista.sort()</li>
+<li>Pedir 5 números por teclado y guardaros en una lista.</li>
+<li>Mostrar la lista original, sin ordenar.</li>
+<li>Llamar a la función anterior para ver el contenido de la lista ordenado.  </li>
 </ol>
-<p>Ejemplo:</p>
-<p><code>1. Sumar</code><br />
+<h3 id="ejercicio-5">Ejercicio 5</h3>
+<ol>
+<li>Crear una función que reciba una lista y devuelva el número de elementos de la misma</li>
+<li>Crear otra función que reciba una lista de números y devuelva la suma de los mismos.</li>
+<li>Pedir números por teclado e ir guardándolos en una lista.</li>
+<li>Dejar de pedir números cuando se introduzca un cero.</li>
+<li>Al finalizar, mostrar por pantalla cuántos números se han introducido y cuál es la suma de todos ellos.</li>
+</ol>
+<h3 id="ejercicio-6">Ejercicio 6</h3>
+<ol>
+<li>Crear una función que reciba una palabra y una letra. Deberá devolver cuántas veces aparece dicha letra en la palabra</li>
+<li>Pedir una palabra por teclado.</li>
+<li>Por cada letra de la misma contar cuántas veces aparece y mostrarlo por pantalla.</li>
+</ol>
+<p>Ejemplo:<br />
+<code>Introduce una palabra:  maria</code><br />
+<code>m -&gt; 1</code><br />
+<code>a -&gt; 2</code><br />
+<code>r -&gt; 1</code><br />
+<code>i -&gt; 1</code><br />
+<code>a -&gt; 2</code>    </p>
+<h3 id="ejercicio-7">Ejercicio 7</h3>
+<ol>
+<li>Crea una función por cada una de las operaciones matemáticas básicas: sumar, restar, multiplicar y divididor.</li>
+<li>Cada una de dichas funciones recibirá dos número y devolverá el resultado de la operación.</li>
+<li>A continuación vamos a realiza un programa que simule una calculadora.</li>
+<li>En primer lugar mostrar un menú con las operaciones.</li>
+<li>Pedir al usuario que eliga una de las opciones.</li>
+<li>Después, pedir al usuario dos números.</li>
+<li>Realizar la operación llamando a la función correspondiente.</li>
+<li>Mostrar el resultado por pantalla</li>
+<li>Repetir el proceso hasta que se introduzca el número de la opción de salida.</li>
+</ol>
+<p>Ejemplo:<br />
+<code>1. Sumar</code><br />
 <code>2. Restar</code><br />
 <code>3. Multiplicar</code><br />
 <code>4. Dividir</code><br />
@@ -695,34 +733,7 @@
 <p><code>Introduce una opción: 1</code><br />
 <code>Introduce un número: 4</code><br />
 <code>Introduce otro número: 5</code><br />
-<code>El resultado de sumar 4 y 5 es igual a 9</code>  </p>
-<h3 id="ejercicio-5">Ejercicio 5</h3>
-<ol>
-<li>Pedir 5 números por teclado y guardaros en una lista.</li>
-<li>Crear una función que recorra la lista y muestre sus elementos.</li>
-<li>Llamar a dicha función para ver el contenido de la lista.<br />
-<strong>Pista</strong>: para ordenar utilizar el método sort -&gt; lista.sort()</li>
-</ol>
-<h3 id="ejercicio-6">Ejercicio 6</h3>
-<ol>
-<li>Pedir números por teclado e ir guardándolos en una lista.</li>
-<li>Dejar de pedir números cuando se introduzca un cero.</li>
-<li>Al finalizar, mostrar por pantalla cuántos números se han introducido y cuál es la suma de todos ellos.</li>
-<li>Crear dos funciones, una para contar los elementos de la lista y otra para devolver la suma de los mismos.</li>
-</ol>
-<h3 id="ejercicio-7">Ejercicio 7</h3>
-<ol>
-<li>Pedir una palabra por teclado.</li>
-<li>Por cada letra de la misma contar cuántas veces aparece y mostrarlo por pantalla.</li>
-<li>Crear una función para contar ocurrencia de cada letra.</li>
-</ol>
-<p>Ejemplo</p>
-<p><code>Introduce una palabra:  maria</code><br />
-<code>m -&gt; 1</code><br />
-<code>a -&gt; 2</code><br />
-<code>r -&gt; 1</code><br />
-<code>i -&gt; 1</code><br />
-<code>a -&gt; 2</code>  </p>
+<code>El resultado de sumar 4 y 5 es igual a 9</code></p>
 
 
 

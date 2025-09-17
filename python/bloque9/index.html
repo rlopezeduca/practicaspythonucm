@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bloque-9-ficheros" class="md-skip">
+        <a href="#bloque-9-ficheros-excel-con-openpyxl" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -511,6 +511,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ejercicio-extra-excepciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio extra: excepciones
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -581,6 +590,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ejercicio-extra-excepciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ejercicio extra: excepciones
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -597,38 +615,54 @@
 
 
 
-<h1 id="bloque-9-ficheros">Bloque 9. Ficheros</h1>
+<h1 id="bloque-9-ficheros-excel-con-openpyxl">Bloque 9. Ficheros excel con OpenPyXL</h1>
 <h3 id="ejercicio-1">Ejercicio 1</h3>
 <ol>
-<li>Llama a la función que genera notas, del módulo del ejercicio 4, y genera una lista de 10 notas.</li>
-<li>Guardar la lista de notas anterior en la primera fila de un documento Excel llamado “ListaNotas.xlsx”</li>
+<li>Importa la libreria <code>openpyxl</code></li>
+<li>Crea un nuevo libro.</li>
+<li>Carga la hoja activa.</li>
+<li>Cambia el nombre de la hoja activa por el de "Uso OpenPyXL".</li>
+<li>Añade la siguiente información en las tres primeras celdas de la primera fila<br />
+<code>"Apellido" | "Nombre" | "Edad"</code></li>
+<li>Guarda el fichero con el nombre que desees.</li>
 </ol>
 <h3 id="ejercicio-2">Ejercicio 2</h3>
 <ol>
-<li>
-<p>Crear una nueva función que, dada una lista de notas, devuelva el número de notas aprobadas y otra función que devuelva el número de notas suspensas.<br />
-<strong>Extra</strong>: puedes hacer una sola función que devuelva dos valores: nº aprobados y nº de suspensos</p>
-</li>
-<li>
-<p>Probar la función desde un notebook generando previamente una lista de 20 notas llamando al método correspondiente del módulo del ejercicio 4.</p>
-</li>
+<li>Importa la libreria <code>openpyxl</code></li>
+<li>Abre el documento anterior.</li>
+<li>Carga la hoja activa.</li>
+<li>Cambia el valor de una celda "A1" por el valor "Apellidos"</li>
+<li>Guarda el fichero.</li>
 </ol>
 <h3 id="ejercicio-3">Ejercicio 3</h3>
-<p><strong>Continuación ejercicio anterior.</strong></p>
 <ol>
-<li>Llama a la función que genera notas, del módulo del ejercicio 4, y genera una lista de 20 notas.</li>
-<li>Lama a la función del ejercicio anterior para obtener el número de aprobados y el número de suspensos.</li>
-<li>Después crear un gráfico de barras con dicha información.</li>
+<li>Importa la libreria <code>openpyxl</code></li>
+<li>Abre el documento anterior.</li>
+<li>Carga la hoja activa.</li>
+<li>Añade una nueva fila al final del documento con los datos de una persona, por ejemplo:<br />
+<code>"Lopez Gomez" | "Pepe" | "32"</code></li>
+<li>Guarda el fichero.</li>
 </ol>
 <h3 id="ejercicio-4">Ejercicio 4</h3>
 <ol>
-<li>Crear dos funciones: esEntero y esDecimal. Ambas reciben un str que ha sido recogido con un input e indican si el valor es entero o decimal respectivamente, devolviendo True o False.</li>
-<li>Después crear el código necesario para probar ambas funciones.</li>
+<li>Importa la libreria <code>openpyxl</code></li>
+<li>Abre el documento anterior.</li>
+<li>Carga la hoja activa.</li>
+<li>Carga el rango de celdas A1:C2</li>
+<li>Recorre el rango anterior mostrando la información de cada celda</li>
 </ol>
-<p><strong>Pista</strong>: debes utilizar las excepciones para realizar el ejercicio:<br />
-<a href="https://codingornot.com/08-python-validar-entradas-ejemplos">https://codingornot.com/08-python-validar-entradas-ejemplos</a></p>
-<p>Ejemplo:</p>
-<p><code>Introduce un valor: 1</code><br />
+<h3 id="ejercicio-extra-excepciones">Ejercicio extra: excepciones</h3>
+<ol>
+<li>Crear dos funciones: esEntero y esDecimal.</li>
+<li>Ambas reciben un str que ha sido recogido con un input</li>
+<li>La función esEntero indica si el valor es entero devolviendo True o False.</li>
+<li>La función esDecimal indica si el valor es decimal devolviendo True o False.</li>
+<li>Por último, crear el código necesario para probar ambas funciones.<br />
+<strong>Pista</strong>: debes utilizar las excepciones para realizar el ejercicio:<br />
+<a href="https://codingornot.com/08-python-validar-entradas-ejemplos">https://codingornot.com/08-python-validar-entradas-ejemplos</a></li>
+</ol>
+<p>Ejemplo:<br />
+<code>Introduce un valor: 1</code><br />
 <code>El valor introducido es un número ENTERO</code><br />
 <code>Introduce un valor: 3.4</code><br />
 <code>El valor introducido es un número DECIMAL</code><br />
